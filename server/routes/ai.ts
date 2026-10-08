@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { GoogleGenAI } from '@google/genai';
-import { dbStore } from '../db.js';
+import { dbStore } from '../db.ts';
 
 const router = Router();
 

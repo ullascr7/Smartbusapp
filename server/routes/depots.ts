@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import { dbStore } from '../db.js';
-import { requireAuth, requireAdmin, requireDepotManagerForAssignedDepot, AuthRequest } from '../auth.js';
-import { Bus, Route, RouteStop, Trip, OperationalStatus, LiveBusStatus } from '../../src/types/index.js';
+import { dbStore } from '../db.ts';
+import { requireAuth, requireAdmin, requireDepotManagerForAssignedDepot, type AuthRequest } from '../auth.ts';
+import type {  Bus, Route, RouteStop, Trip, OperationalStatus, LiveBusStatus  } from '../../src/types/index.ts';
 
 const router = Router();
 

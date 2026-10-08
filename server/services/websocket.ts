@@ -1,7 +1,7 @@
 import { Server as HttpServer } from 'http';
 import { WebSocketServer, WebSocket } from 'ws';
-import { dbStore } from '../db.js';
-import { BusTracking } from '../../src/types/index.js';
+import { dbStore } from '../db.ts';
+import type {  BusTracking  } from '../../src/types/index.ts';
 
 interface ClientConnection {
   ws: WebSocket;

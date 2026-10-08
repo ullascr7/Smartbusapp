@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
-import { Request, Response, NextFunction } from 'express';
-import { dbStore } from './db.js';
-import { UserRole } from '../src/types/index.js';
+import type { Request, Response, NextFunction } from 'express';
+import { dbStore } from './db.ts';
+import type {  UserRole  } from '../src/types/index.ts';
 
 const JWT_SECRET = process.env.JWT_SECRET || 'smartbus-ai-ksrtc-secret-2026';
 

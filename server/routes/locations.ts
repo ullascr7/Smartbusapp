@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { dbStore } from '../db.js';
-import { Location } from '../../src/types/index.js';
+import { dbStore } from '../db.ts';
+import type {  Location  } from '../../src/types/index.ts';
 
 const router = Router();
 

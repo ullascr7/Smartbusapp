@@ -5,17 +5,17 @@ import { fileURLToPath } from 'url';
 import { createServer as createViteServer } from 'vite';
 import dotenv from 'dotenv';
 
-import authRouter from './server/routes/auth.js';
-import locationsRouter from './server/routes/locations.js';
-import distanceRouter from './server/routes/distance.js';
-import busesRouter from './server/routes/buses.js';
-import bookingsRouter from './server/routes/bookings.js';
-import userRouter from './server/routes/user.js';
-import adminRouter from './server/routes/admin.js';
-import trackingRouter from './server/routes/tracking.js';
-import aiRouter from './server/routes/ai.js';
-import depotsRouter from './server/routes/depots.js';
-import { initWebSocketServer } from './server/services/websocket.js';
+import authRouter from './server/routes/auth.ts';
+import locationsRouter from './server/routes/locations.ts';
+import distanceRouter from './server/routes/distance.ts';
+import busesRouter from './server/routes/buses.ts';
+import bookingsRouter from './server/routes/bookings.ts';
+import userRouter from './server/routes/user.ts';
+import adminRouter from './server/routes/admin.ts';
+import trackingRouter from './server/routes/tracking.ts';
+import aiRouter from './server/routes/ai.ts';
+import depotsRouter from './server/routes/depots.ts';
+import { initWebSocketServer } from './server/services/websocket.ts';
 
 dotenv.config();
 
@@ -24,7 +24,7 @@ const __dirname = path.dirname(__filename);
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
   // JSON Body parsing
   app.use(express.json());

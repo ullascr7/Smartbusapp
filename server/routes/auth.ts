@@ -1,8 +1,8 @@
 import { Router } from 'express';
 import bcrypt from 'bcryptjs';
-import { dbStore } from '../db.js';
-import { generateToken, authenticateToken, AuthRequest } from '../auth.js';
-import { User } from '../../src/types/index.js';
+import { dbStore } from '../db.ts';
+import { generateToken, authenticateToken, type AuthRequest } from '../auth.ts';
+import type {  User  } from '../../src/types/index.ts';
 
 const router = Router();
 

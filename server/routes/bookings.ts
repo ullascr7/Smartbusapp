@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { dbStore } from '../db.js';
-import { authenticateToken, optionalAuth, AuthRequest } from '../auth.js';
+import { dbStore } from '../db.ts';
+import { authenticateToken, optionalAuth, type AuthRequest } from '../auth.ts';
 
 const router = Router();
 

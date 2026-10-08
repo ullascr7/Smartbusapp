@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { dbStore } from '../db.js';
-import { DistanceCalculationResult } from '../../src/types/index.js';
+import { dbStore } from '../db.ts';
+import type {  DistanceCalculationResult  } from '../../src/types/index.ts';
 
 const router = Router();
 

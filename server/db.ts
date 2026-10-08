@@ -1,4 +1,4 @@
-import {
+import type { 
   DatabaseData,
   Location,
   Bus,
@@ -14,7 +14,7 @@ import {
   DepotManager,
   Trip,
   BusTracking
-} from '../src/types/index.js';
+ } from '../src/types/index.ts';
 import fs from 'fs';
 import path from 'path';
 import bcrypt from 'bcryptjs';
