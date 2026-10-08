@@ -1,0 +1,6 @@
+{
+  "name": "SmartBus AI – Intelligent Bus Booking System",
+  "description": "KSRTC-style intelligent bus reservation platform with village and town level location search, automatic distance & fare calculation, visual seat selection, and live driver tracking.",
+  "requestFramePermissions": ["microphone", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
